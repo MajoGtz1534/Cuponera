@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="Cupones")
+import jakarta.persistence.Entity;
+
+@Entity
 public class Cupones {
 
 
