@@ -6,6 +6,9 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name="Cupones")
+import jakarta.persistence.Entity;
+
+@Entity
 public class Cupones {
 
 
