@@ -3,12 +3,12 @@ package com.Entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.Date;
 
-@Entity
-@Table(name="Cupones")
 import jakarta.persistence.Entity;
 
 @Entity
+@Table(name="Cupones")
 public class Cupones {
 
 
@@ -53,8 +53,10 @@ public class Cupones {
     @Column(name = "usuarioUpdate", columnDefinition = "varchar(12)")
     private String usuarioUpdate;
 
-    public Cupones(){
+   public Cupones(){
+    }
 
+    public Cupones(Date fechaInicioVigencia, Date fechaFinVigencia, int valor, int compraMinima, String usuarioUpdate, Date fechaUpdate){
     }
 
     public Cupones(int idCupon, String codigo, String numReferencia, String numCelular, LocalDate fechaUso, LocalDate fechaInicioVigencia, LocalDate fechaFinVigencia, int valor, int compraMinima, String descripcion, int idLote, String usuarioInsert, String usuarioUpdate) {
