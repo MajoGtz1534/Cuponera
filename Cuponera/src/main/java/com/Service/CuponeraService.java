@@ -10,6 +10,8 @@ import java.util.List;
 public interface CuponeraService {
     List<Cupones> GetAllCupones();
     String editarCuponesLote(CuponesRequest request);
+    List<Cupones> mostrarPorLote(int idLote);
+    String borrarPorLote(int idLote);
 
     Cupones guardar(CuponesRequest request);
     Cupones actualizar(CuponesRequest request);
