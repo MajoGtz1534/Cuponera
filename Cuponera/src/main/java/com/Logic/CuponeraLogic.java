@@ -28,6 +28,18 @@ public class CuponeraLogic implements CuponeraService {
     }
 
     @Override
+    public List<Cupones> mostrarPorLote(int idLote) {
+        List<Cupones> cupones = repository.cuponesPorLote(idLote);
+        return cupones;
+    }
+
+    @Override
+    public String borrarPorLote(int idLote) {
+        repository.borrarPorLote(idLote);
+        return "Eliminado Correctamente";
+    }
+
+    @Override
     public Cupones guardar(CuponesRequest request) {
         return null;
     }
