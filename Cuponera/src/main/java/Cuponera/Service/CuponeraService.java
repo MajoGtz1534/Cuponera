@@ -1,15 +1,16 @@
-package com.Service;
+package Cuponera.Service;
 
-import com.Entity.Cupones;
-import com.Request.CuponesRequest;
+import Cuponera.Entity.Cupones;
+import Cuponera.Entity.Prueba;
+import Cuponera.Request.CuponesRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public interface CuponeraService {
-    List<Cupones> GetAllCupones();
-    String editarCuponesLote(CuponesRequest request);
+    List obtenerCupones();
+//    String editarCuponesLote(CuponesRequest request);
     List<Cupones> mostrarPorLote(int idLote);
     String borrarPorLote(int idLote);
 

@@ -1,4 +1,4 @@
-package com.Request;
+package Cuponera.Request;
 
 import java.util.Date;
 
