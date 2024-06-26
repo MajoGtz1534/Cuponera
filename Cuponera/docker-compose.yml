@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:5.7
+    #    restart: always
+    environment:
+      MYSQL_DATABASE: cuponeradb
+      MYSQL_ROOT_PASSWORD: admin
+    ports:
+      # <Port exposed> : <MySQL Port running inside container>
+      - '3306:3306'
+    volumes:
+      - cuponera:/var/lib/mysql
+# Names our volume
+volumes:
+  cuponera:
